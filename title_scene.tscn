@@ -1,17 +1,15 @@
 [gd_scene format=3 uid="uid://g1n6ucissbx3"]
 
-[ext_resource type="Script" uid="uid://7260cq5oc4ud" path="res://title_scene.gd" id="1_176dl"]
 [ext_resource type="Texture2D" uid="uid://73jp8g1lladl" path="res://istockphoto-1333010525-612x612.jpg" id="1_wkkv4"]
 
 [node name="TitleScreen" type="Node2D" unique_id=1857945039]
 position = Vector2(0, 2)
-script = ExtResource("1_176dl")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=734007182]
 offset_left = 3.0
 offset_top = 2.0
-offset_right = 1152.0
-offset_bottom = 647.0
+offset_right = 1150.0
+offset_bottom = 643.0
 texture = ExtResource("1_wkkv4")
 
 [node name="Title" type="RichTextLabel" parent="." unique_id=1343640411]
@@ -60,4 +58,5 @@ offset_right = 753.0
 offset_bottom = 430.0
 
 [connection signal="pressed" from="StartGame" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

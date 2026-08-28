@@ -1,5 +1,7 @@
-extends Node2D
+extends Node
 
+var minigames_done = 0
+var lives = 5
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -9,12 +11,3 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
-
-func _on_start_game_pressed() -> void:
-	get_tree().change_scene_to_file("res://title_scene.tscn")
-
-func _on_quit_pressed() -> void:
-	get_tree().quit()
-
-func _on_settings_pressed() -> void:
-	get_tree().quit()

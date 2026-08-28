@@ -1,3 +1,65 @@
 [gd_scene format=3 uid="uid://qobpik8uw4jm"]
 
-[node name="Node2D" type="Node2D" unique_id=397952349]
+[ext_resource type="Script" uid="uid://b2xsukvaddkud" path="res://timer_screen.gd" id="1_epypp"]
+[ext_resource type="Texture2D" uid="uid://73jp8g1lladl" path="res://istockphoto-1333010525-612x612.jpg" id="2_0hol4"]
+[ext_resource type="Texture2D" uid="uid://wva6ggd5aasl" path="res://coconut2.png" id="3_q6r6c"]
+
+[node name="level_scene" type="Node2D" unique_id=397952349]
+script = ExtResource("1_epypp")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1327553204]
+offset_left = 2.0
+offset_top = 4.0
+offset_right = 1149.0
+offset_bottom = 650.0
+texture = ExtResource("2_0hol4")
+
+[node name="CocoTree" type="HBoxContainer" parent="TextureRect" unique_id=2119487650]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 59.0
+offset_right = 1027.0
+offset_bottom = 222.0
+
+[node name="Coconut1" type="TextureRect" parent="TextureRect/CocoTree" unique_id=666616590]
+layout_mode = 2
+texture = ExtResource("3_q6r6c")
+expand_mode = 2
+
+[node name="Coconut2" type="TextureRect" parent="TextureRect/CocoTree" unique_id=1451125976]
+layout_mode = 2
+texture = ExtResource("3_q6r6c")
+expand_mode = 2
+
+[node name="Coconut3" type="TextureRect" parent="TextureRect/CocoTree" unique_id=1140090525]
+layout_mode = 2
+texture = ExtResource("3_q6r6c")
+expand_mode = 2
+
+[node name="Coconut4" type="TextureRect" parent="TextureRect/CocoTree" unique_id=43583129]
+layout_mode = 2
+texture = ExtResource("3_q6r6c")
+expand_mode = 2
+
+[node name="Coconut5" type="TextureRect" parent="TextureRect/CocoTree" unique_id=1754072586]
+layout_mode = 2
+texture = ExtResource("3_q6r6c")
+expand_mode = 2
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=1964704798]
+offset_left = 471.0
+offset_top = 246.0
+offset_right = 671.0
+offset_bottom = 329.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 45
+text = "Level #"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=1348284485]
+offset_left = 514.0
+offset_top = 354.0
+offset_right = 600.0
+offset_bottom = 409.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 36
+text = "0.0"
