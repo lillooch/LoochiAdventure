@@ -1,3 +1,10 @@
 [gd_scene format=3 uid="uid://i478pirgoa4e"]
 
+[ext_resource type="Texture2D" uid="uid://73jp8g1lladl" path="res://istockphoto-1333010525-612x612.jpg" id="1_4quuv"]
+
 [node name="level_scene" type="Node2D" unique_id=273523450]
+
+[node name="Istockphoto1333010525612x612" type="Sprite2D" parent="." unique_id=1266429150]
+position = Vector2(579.5, 329.75)
+scale = Vector2(1.883987, 1.7888284)
+texture = ExtResource("1_4quuv")
